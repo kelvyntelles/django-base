@@ -1,4 +1,4 @@
-Clone o repositório usando git clone mais a ulr no projeto
+Clone o repositório usando git clone mais a ulr do projeto
 
 Depois mude o nome do projeto "django-base" para o nome do seu projeto
 
