@@ -4,9 +4,9 @@ services:
   db:
     image: postgres:13-alpine
     environment:
-      POSTGRES_DB: djangodb
-      POSTGRES_USER: djangouser
-      POSTGRES_PASSWORD: djangopassword
+      POSTGRES_DB: zipteste
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -19,11 +19,12 @@ services:
     depends_on:
       - db
     environment:
-      DB_NAME: djangodb
-      DB_USER: djangouser
-      DB_PASSWORD: djangopassword
+      DB_NAME: zipteste
+      DB_USER: admin
+      DB_PASSWORD: admin
       DB_HOST: db
       DB_PORT: 5432
 
 volumes:
   postgres_data:
+  
